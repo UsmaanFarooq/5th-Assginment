@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cocking Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div>
+        <h2>Cocking Master</h2>
+    </div>
+
+    <div class="container mt-5">
+        <div class="input-group mb-3 w-50 searchBox">
+            <input id="search-box" type="search" class="form-control" placeholder="🔍 Search for recipe.....">
+            <div class="input-group-append">
+                <button onclick="mealList()" class="input-group-text btn btn-danger">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5"><div id="meal-details">
+    </div>
+    </div>
+
+    <section class="container mt-5">
+        <div class="row" id="meals-card"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

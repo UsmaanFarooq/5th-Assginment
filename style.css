@@ -1,0 +1,31 @@
+body{
+    background-color: #f1c40f;
+}
+.search-button{
+    background-color: #F06C4E;
+    color: white;
+}
+.search-button:active{
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+.searchBox{
+    margin: auto; 
+}
+.card{
+    width: 400px;
+    margin: auto;
+}
+.card img{
+    height: 400px;
+    
+}
+.mealName{
+    text-align: center;
+}
+.card-color{
+    background-color: #dfe4ea;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
