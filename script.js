@@ -13,9 +13,9 @@ const mealList = () => {
             displayFood(data.meals);
         });
 };
-
 const displayFood = (foods) => {
     let mealsCard = document.getElementById("meals-card");
+   mealsCard.innerHTML = '';
     if (foods === null || foods.length < 0) {
         const mealsDiv = document.createElement("div");
         alert("Are you sure you want to search this meal");
@@ -38,9 +38,11 @@ const displayFood = (foods) => {
             `;
             mealsDiv.innerHTML = mealsInfo;
             mealsCard.appendChild(mealsDiv);
+            
         });
     }
     document.getElementById("search-box").value = "";
+    
 }
 
 const displayMealDetails = mealDetails => {
@@ -54,6 +56,7 @@ const displayMealDetails = mealDetails => {
 
 const mealInfo = food => {
     const mealDetail = document.getElementById('meal-details');
+    
     const mealIngredients = [];
     for (let i = 1; i <= 20; i++) {
         if (food[`strIngredient${i}`]) {
